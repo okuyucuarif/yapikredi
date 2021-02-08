@@ -3,7 +3,11 @@ import java.util.Stack;
 public class Balance {
     public static void main(String[] args) {
         String example = "[(])";
-        System.out.println("Is Example balanced? " + isBalanced(example));
+        System.out.println("Is " +  example + " balanced? "  + isBalanced(example));
+        example = "()[]{}";
+        System.out.println("Is " +  example + " balanced? " + isBalanced(example));
+        example = "()";
+        System.out.println("Is " +  example + " balanced? " + isBalanced(example));
     }
 
     public static boolean isBalanced(String example) {
